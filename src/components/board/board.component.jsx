@@ -3,29 +3,22 @@ import React from 'react';
 import Square from '../square/square.component';
 
 const Board = props => {
-  const renderSquare = i => {
-    return <Square value={props.squares[i]} onClick={() => props.onClick(i)} />;
-  };
+  let list = [];
 
-  return (
-    <div>
-      <div className='board-row'>
-        {renderSquare(0)}
-        {renderSquare(1)}
-        {renderSquare(2)}
-      </div>
-      <div className='board-row'>
-        {renderSquare(3)}
-        {renderSquare(4)}
-        {renderSquare(5)}
-      </div>
-      <div className='board-row'>
-        {renderSquare(6)}
-        {renderSquare(7)}
-        {renderSquare(8)}
-      </div>
-    </div>
-  );
+  for (let i = 0; i < 3; i++) {
+    list.push(<div className='board-row' key={(i + 1) * 1000}></div>);
+    for (let j = 0; j < 3; j++) {
+      list.push(
+        <Square
+          key={i * 3 + j}
+          value={props.squares[i * 3 + j]}
+          onClick={() => props.onClick(i * 3 + j)}
+        />
+      );
+    }
+  }
+
+  return <div>{list}</div>;
 };
 
 export default Board;

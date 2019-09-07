@@ -7,7 +7,7 @@ const Game = () => {
   const [history, setHistory] = useState([{ squares: Array(9).fill(null) }]);
   const [xIsNext, setXIsNext] = useState(true);
   const [stepNumber, setStepNumber] = useState(0);
-  const [preStepNumber, setPreStepNumber] = useState(0);
+  const [maxTurn, setMaxTurn] = useState(0);
 
   const handleClick = i => {
     const newHistory = history.slice(0, stepNumber + 1);
@@ -28,20 +28,13 @@ const Game = () => {
     );
     setStepNumber(newHistory.length);
     setXIsNext(!xIsNext);
+    setMaxTurn(newHistory.length);
   };
 
   const jumpTo = step => {
     setStepNumber(step);
+    setMaxTurn(step);
     setXIsNext(step % 2 === 0);
-  };
-
-  const viewStep = step => {
-    setPreStepNumber(stepNumber);
-    setStepNumber(step);
-  };
-
-  const backStep = () => {
-    setStepNumber(preStepNumber);
   };
 
   const current = history[stepNumber];
@@ -55,14 +48,15 @@ const Game = () => {
         <button
           className='history'
           onClick={() => jumpTo(move)}
-          onMouseEnter={() => viewStep(move)}
-          onMouseLeave={() => backStep()}
+          onMouseEnter={() => setStepNumber(move)}
+          onMouseLeave={() => setStepNumber(maxTurn)}
         >
           {desc}
         </button>
       </li>
     );
   });
+
   let status;
 
   if (winner) {
