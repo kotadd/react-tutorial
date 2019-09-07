@@ -53,6 +53,7 @@ const Game = () => {
     return (
       <li key={move}>
         <button
+          className='history'
           onClick={() => jumpTo(move)}
           onMouseEnter={() => viewStep(move)}
           onMouseLeave={() => backStep()}
