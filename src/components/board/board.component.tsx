@@ -1,12 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import Square from '../square/square.component';
+import Square from "../square/square.component";
 
-const Board = props => {
+type BoardProps = {
+  squares: ("O" | "X" | null)[];
+  onClick: (i: number) => void;
+};
+
+const Board = (props: BoardProps) => {
   let list = [];
 
   for (let i = 0; i < 3; i++) {
-    list.push(<div className='board-row' key={(i + 1) * 1000}></div>);
+    list.push(<div className="board-row" key={(i + 1) * 1000}></div>);
     for (let j = 0; j < 3; j++) {
       list.push(
         <Square

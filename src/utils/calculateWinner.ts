@@ -1,4 +1,8 @@
-export default function calculateWinner(squares) {
+type SquresProps = {
+  [key: number]: "O" | "X" | null;
+};
+
+export default function calculateWinner(squares: SquresProps) {
   const lines = [
     [0, 1, 2],
     [3, 4, 5],
