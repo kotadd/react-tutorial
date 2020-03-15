@@ -9,7 +9,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "tsc",
+    "build": "tsc --build",
+    "lint": "eslint --ext .ts,.tsx ./",
+    "lint:fix": "eslint --ext .ts,.tsx --fix ./",
+    "android": "expo start --android",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -31,7 +34,6 @@
   "devDependencies": {
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
-    "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",

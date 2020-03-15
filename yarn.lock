@@ -9,13 +9,6 @@
   dependencies:
     "@babel/highlight" "^7.0.0"
 
-"@babel/code-frame@^7.8.3":
-  version "7.8.3"
-  resolved "http://edge.artifactory.corp.yahoo.co.jp:8000/artifactory/api/npm/apj-npm/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
-  integrity sha1-M+JZA9dIEYFTThLsCiXxa2/PQZ4=
-  dependencies:
-    "@babel/highlight" "^7.8.3"
-
 "@babel/core@7.5.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.5.5.tgz#17b2686ef0d6bc58f963dddd68ab669755582c30"
@@ -66,16 +59,6 @@
     lodash "^4.17.13"
     source-map "^0.5.0"
     trim-right "^1.0.1"
-
-"@babel/generator@^7.8.6":
-  version "7.8.8"
-  resolved "http://edge.artifactory.corp.yahoo.co.jp:8000/artifactory/api/npm/apj-npm/@babel/generator/-/generator-7.8.8.tgz#cdcd58caab730834cee9eeadb729e833b625da3e"
-  integrity sha1-zc1YyqtzCDTO6e6ttynoM7Yl2j4=
-  dependencies:
-    "@babel/types" "^7.8.7"
-    jsesc "^2.5.1"
-    lodash "^4.17.13"
-    source-map "^0.5.0"
 
 "@babel/helper-annotate-as-pure@^7.0.0":
   version "7.0.0"
@@ -147,28 +130,12 @@
     "@babel/template" "^7.1.0"
     "@babel/types" "^7.0.0"
 
-"@babel/helper-function-name@^7.8.3":
-  version "7.8.3"
-  resolved "http://edge.artifactory.corp.yahoo.co.jp:8000/artifactory/api/npm/apj-npm/@babel/helper-function-name/-/helper-function-name-7.8.3.tgz#eeeb665a01b1f11068e9fb86ad56a1cb1a824cca"
-  integrity sha1-7utmWgGx8RBo6fuGrVahyxqCTMo=
-  dependencies:
-    "@babel/helper-get-function-arity" "^7.8.3"
-    "@babel/template" "^7.8.3"
-    "@babel/types" "^7.8.3"
-
 "@babel/helper-get-function-arity@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/helper-get-function-arity/-/helper-get-function-arity-7.0.0.tgz#83572d4320e2a4657263734113c42868b64e49c3"
   integrity sha512-r2DbJeg4svYvt3HOS74U4eWKsUAMRH01Z1ds1zx8KNTPtpTL5JAsdFv8BNyOpVqdFhHkkRDIg5B4AsxmkjAlmQ==
   dependencies:
     "@babel/types" "^7.0.0"
-
-"@babel/helper-get-function-arity@^7.8.3":
-  version "7.8.3"
-  resolved "http://edge.artifactory.corp.yahoo.co.jp:8000/artifactory/api/npm/apj-npm/@babel/helper-get-function-arity/-/helper-get-function-arity-7.8.3.tgz#b894b947bd004381ce63ea1db9f08547e920abd5"
-  integrity sha1-uJS5R70AQ4HOY+odufCFR+kgq9U=
-  dependencies:
-    "@babel/types" "^7.8.3"
 
 "@babel/helper-hoist-variables@^7.4.4":
   version "7.4.4"
@@ -258,13 +225,6 @@
   dependencies:
     "@babel/types" "^7.4.4"
 
-"@babel/helper-split-export-declaration@^7.8.3":
-  version "7.8.3"
-  resolved "http://edge.artifactory.corp.yahoo.co.jp:8000/artifactory/api/npm/apj-npm/@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.8.3.tgz#31a9f30070f91368a7182cf05f831781065fc7a9"
-  integrity sha1-ManzAHD5E2inGCzwX4MXgQZfx6k=
-  dependencies:
-    "@babel/types" "^7.8.3"
-
 "@babel/helper-wrap-function@^7.1.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@babel/helper-wrap-function/-/helper-wrap-function-7.2.0.tgz#c4e0012445769e2815b55296ead43a958549f6fa"
@@ -293,15 +253,6 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@babel/highlight@^7.8.3":
-  version "7.8.3"
-  resolved "http://edge.artifactory.corp.yahoo.co.jp:8000/artifactory/api/npm/apj-npm/@babel/highlight/-/highlight-7.8.3.tgz#28f173d04223eaaa59bc1d439a3836e6d1265797"
-  integrity sha1-KPFz0EIj6qpZvB1Dmjg25tEmV5c=
-  dependencies:
-    chalk "^2.0.0"
-    esutils "^2.0.2"
-    js-tokens "^4.0.0"
-
 "@babel/parser@^7.0.0", "@babel/parser@^7.1.0", "@babel/parser@^7.4.3", "@babel/parser@^7.5.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.5.5.tgz#02f077ac8817d3df4a832ef59de67565e71cca4b"
@@ -311,11 +262,6 @@
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.6.0.tgz#3e05d0647432a8326cb28d0de03895ae5a57f39b"
   integrity sha512-+o2q111WEx4srBs7L9eJmcwi655eD8sXniLqMB93TBK9GrNzGrxDWSjiqz2hLU0Ha8MTXFIP0yd9fNdP+m43ZQ==
-
-"@babel/parser@^7.7.0", "@babel/parser@^7.8.6":
-  version "7.8.8"
-  resolved "http://edge.artifactory.corp.yahoo.co.jp:8000/artifactory/api/npm/apj-npm/@babel/parser/-/parser-7.8.8.tgz#4c3b7ce36db37e0629be1f0d50a571d2f86f6cd4"
-  integrity sha1-TDt8422zfgYpvh8NUKVx0vhvbNQ=
 
 "@babel/plugin-proposal-async-generator-functions@^7.2.0":
   version "7.2.0"
@@ -929,15 +875,6 @@
     "@babel/parser" "^7.6.0"
     "@babel/types" "^7.6.0"
 
-"@babel/template@^7.8.3":
-  version "7.8.6"
-  resolved "http://edge.artifactory.corp.yahoo.co.jp:8000/artifactory/api/npm/apj-npm/@babel/template/-/template-7.8.6.tgz#86b22af15f828dfb086474f964dcc3e39c43ce2b"
-  integrity sha1-hrIq8V+CjfsIZHT5ZNzD45xDzis=
-  dependencies:
-    "@babel/code-frame" "^7.8.3"
-    "@babel/parser" "^7.8.6"
-    "@babel/types" "^7.8.6"
-
 "@babel/traverse@^7.0.0", "@babel/traverse@^7.1.0", "@babel/traverse@^7.4.3", "@babel/traverse@^7.4.4", "@babel/traverse@^7.5.5", "@babel/traverse@^7.6.0":
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.6.0.tgz#389391d510f79be7ce2ddd6717be66d3fed4b516"
@@ -953,34 +890,10 @@
     globals "^11.1.0"
     lodash "^4.17.13"
 
-"@babel/traverse@^7.7.0":
-  version "7.8.6"
-  resolved "http://edge.artifactory.corp.yahoo.co.jp:8000/artifactory/api/npm/apj-npm/@babel/traverse/-/traverse-7.8.6.tgz#acfe0c64e1cd991b3e32eae813a6eb564954b5ff"
-  integrity sha1-rP4MZOHNmRs+MuroE6brVklUtf8=
-  dependencies:
-    "@babel/code-frame" "^7.8.3"
-    "@babel/generator" "^7.8.6"
-    "@babel/helper-function-name" "^7.8.3"
-    "@babel/helper-split-export-declaration" "^7.8.3"
-    "@babel/parser" "^7.8.6"
-    "@babel/types" "^7.8.6"
-    debug "^4.1.0"
-    globals "^11.1.0"
-    lodash "^4.17.13"
-
 "@babel/types@^7.0.0", "@babel/types@^7.2.0", "@babel/types@^7.3.0", "@babel/types@^7.4.0", "@babel/types@^7.4.4", "@babel/types@^7.5.5", "@babel/types@^7.6.0":
   version "7.6.1"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.6.1.tgz#53abf3308add3ac2a2884d539151c57c4b3ac648"
   integrity sha512-X7gdiuaCmA0uRjCmRtYJNAVCc/q+5xSgsfKJHqMN4iNLILX39677fJE1O40arPMh0TTtS9ItH67yre6c7k6t0g==
-  dependencies:
-    esutils "^2.0.2"
-    lodash "^4.17.13"
-    to-fast-properties "^2.0.0"
-
-"@babel/types@^7.7.0", "@babel/types@^7.8.3", "@babel/types@^7.8.6", "@babel/types@^7.8.7":
-  version "7.8.7"
-  resolved "http://edge.artifactory.corp.yahoo.co.jp:8000/artifactory/api/npm/apj-npm/@babel/types/-/types-7.8.7.tgz#1fc9729e1acbb2337d5b6977a63979b4819f5d1d"
-  integrity sha1-H8lynhrLsjN9W2l3pjl5tIGfXR0=
   dependencies:
     esutils "^2.0.2"
     lodash "^4.17.13"
@@ -2029,18 +1942,6 @@ babel-eslint@10.0.2:
     "@babel/types" "^7.0.0"
     eslint-scope "3.7.1"
     eslint-visitor-keys "^1.0.0"
-
-babel-eslint@^10.1.0:
-  version "10.1.0"
-  resolved "http://edge.artifactory.corp.yahoo.co.jp:8000/artifactory/api/npm/apj-npm/babel-eslint/-/babel-eslint-10.1.0.tgz#6968e568a910b78fb3779cdd8b6ac2f479943232"
-  integrity sha1-aWjlaKkQt4+zd5zdi2rC9HmUMjI=
-  dependencies:
-    "@babel/code-frame" "^7.0.0"
-    "@babel/parser" "^7.7.0"
-    "@babel/traverse" "^7.7.0"
-    "@babel/types" "^7.7.0"
-    eslint-visitor-keys "^1.0.0"
-    resolve "^1.12.0"
 
 babel-extract-comments@^1.0.0:
   version "1.0.0"
@@ -8904,7 +8805,7 @@ resolve@1.12.0, resolve@^1.10.0, resolve@^1.10.1, resolve@^1.11.0, resolve@^1.3.
   dependencies:
     path-parse "^1.0.6"
 
-resolve@^1.12.0, resolve@^1.15.1:
+resolve@^1.15.1:
   version "1.15.1"
   resolved "http://edge.artifactory.corp.yahoo.co.jp:8000/artifactory/api/npm/apj-npm/resolve/-/resolve-1.15.1.tgz#27bdcdeffeaf2d6244b95bb0f9f4b4653451f3e8"
   integrity sha1-J73N7/6vLWJEuVuw+fS0ZTRR8+g=
