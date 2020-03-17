@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, ReactElement } from 'react'
 
 import Board from '../board/board.component'
 import calculateWinner from '../../utils/calculateWinner'
 
-const Game = () => {
+const Game = (): ReactElement => {
   const [history, setHistory] = useState([{ squares: Array(9).fill(null) }])
   const [xIsNext, setXIsNext] = useState(true)
   const [stepNumber, setStepNumber] = useState(0)
   const [maxTurn, setMaxTurn] = useState(0)
 
-  const handleClick = (i: number) => {
+  const handleClick = (i: number): void => {
     const newHistory = history.slice(0, stepNumber + 1)
     const current = newHistory[newHistory.length - 1]
     const squares = current.squares.slice()
@@ -31,7 +31,7 @@ const Game = () => {
     setMaxTurn(newHistory.length)
   }
 
-  const jumpTo = (step: number) => {
+  const jumpTo = (step: number): void => {
     setStepNumber(step)
     setMaxTurn(step)
     setXIsNext(step % 2 === 0)
@@ -47,9 +47,9 @@ const Game = () => {
       <li key={move}>
         <button
           className="history"
-          onClick={() => jumpTo(move)}
-          onMouseEnter={() => setStepNumber(move)}
-          onMouseLeave={() => setStepNumber(maxTurn)}
+          onClick={(): void => jumpTo(move)}
+          onMouseEnter={(): void => setStepNumber(move)}
+          onMouseLeave={(): void => setStepNumber(maxTurn)}
         >
           {desc}
         </button>
@@ -68,7 +68,10 @@ const Game = () => {
   return (
     <div className="game">
       <div className="game-board">
-        <Board squares={current.squares} onClick={i => handleClick(i)} />
+        <Board
+          squares={current.squares}
+          onClick={(i: number): void => handleClick(i)}
+        />
       </div>
       <div className="game-info">
         <div>{status}</div>

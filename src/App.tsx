@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { ReactElement } from 'react'
 
-import GamePage from './pages/gamepage/gamepage.component';
+import GamePage from './pages/gamepage/gamepage.component'
 
-const App = () => <GamePage />;
+const App = (): ReactElement => <GamePage />
 
-export default App;
+export default App
